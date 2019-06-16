@@ -4,6 +4,7 @@ You can test this APP under this link: https://youthful-heisenberg-417db8.netlif
 
 Summary of Project Delifnagram APP
 This is a full list of functionalities that was made by Me in the Delfinagram APP :
+
 •	Site layout – I created consistent page layout (header, footer, navigation link) with RWD.
 
 •	Profil page – I created user profile page, where specific user can see all his information and posts. (React + Redux)
