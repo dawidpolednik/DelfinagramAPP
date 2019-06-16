@@ -1,0 +1,29 @@
+.DialogRemove{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.DialogRemoveTitle{
+    text-align: center;
+    h2{
+        font-family: 'RichardMurray';
+        font-size: 3.5rem;
+        
+    }
+} 
+@media (max-width: 320px) and (orientation: portrait) {
+    .DialogRemoveTitle h2 {
+        font-size: 1.8rem; 
+    }
+  }
+  @media (max-width: 415px) and (orientation: portrait) {
+    .DialogRemoveTitle h2 {
+        font-size: 2rem; 
+    }
+  }
+.CheckBoxStyle{
+    padding-left: 3rem;
+}

@@ -1,0 +1,32 @@
+.DrawerDiv {
+  display: flex;
+  width: 200px;
+  flex-direction: row;
+  justify-content: center;
+}
+.MenuList {
+  padding-top: 0;
+  flex-basis: 100%;
+  li {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    padding: 15px 5px 15px;
+    &:hover {
+      cursor: pointer;
+      background-color: black;
+      transition: 0.8s;
+      font-weight: bold;
+      color: white;
+      a {
+        color: white;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}

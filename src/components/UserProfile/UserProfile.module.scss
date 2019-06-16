@@ -1,0 +1,53 @@
+@import "../../assets/styles/variables.scss";
+
+.ProfileContainer {
+  display: flex;
+  flex-direction: row;
+}
+.BioContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.ButtonContainer {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+@include breakpoint-only("sm") {
+  .ButtonContainer {
+    flex-direction: column;
+  }
+}
+@include breakpoint-only("xs") {
+  .ButtonContainer {
+    flex-direction: column;
+  }
+}
+.PhotosContainer {
+  margin-top: 4rem;
+  margin-bottom: 9rem;
+}
+.postImage {
+  padding: 20px 0;
+
+  button {
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      transition: 0.3s;
+    }
+  }
+}
+.TransparentButton {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+}

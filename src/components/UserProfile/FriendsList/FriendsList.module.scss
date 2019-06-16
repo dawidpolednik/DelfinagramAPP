@@ -1,0 +1,10 @@
+@import "../../../assets/styles/variables.scss";
+
+.FriendLink{
+  text-decoration: none;
+  :hover{
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 0.7;
+  }
+}

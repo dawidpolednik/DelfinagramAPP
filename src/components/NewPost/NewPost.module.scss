@@ -1,0 +1,23 @@
+.Form {
+  width: 90%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.FormHeader {
+  font-size: 3rem;
+  font-family: "RichardMurray";
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.FormResult {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}

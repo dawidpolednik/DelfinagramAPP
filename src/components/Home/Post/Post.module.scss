@@ -1,0 +1,74 @@
+$devices_sizes: (
+  ("xs", 0px, 600px),
+  ("sm", 600px, 960px),
+  ("md", 960px, 1280px),
+  ("lg", 1280px, 1920px),
+  ("xl", 1920px, 3840px)
+);
+
+@mixin breakpoint-only($size-name) {
+  @each $size, $lower-breakpoint, $greater-breakpoint in $devices_sizes {
+    @if ($size == $size-name) {
+      @media screen and (min-width: $lower-breakpoint) and (max-width: $greater-breakpoint) {
+        @content;
+      }
+    }
+  }
+}
+.PostCard {
+  margin-bottom: 20px;
+}
+.CardHeader {
+  align-items: center;
+}
+
+.PostImage {
+  height: 500px;
+  width: 100%;
+  background-size: "cover";
+}
+.PostProperties{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .TextPost{
+    margin-bottom: 7px;
+  }
+}
+
+.PostActions {
+  width: 100%;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.ExpandButton {
+  transform: rotate(180deg);
+  margin-left: auto;
+}
+@include breakpoint-only("sm") {
+  .PostImage {
+    height: 450px;
+    width: 100%;
+  }
+}
+@include breakpoint-only("xs") {
+  .PostCard {
+    margin-bottom: 2px;
+    &:first-of-type {
+      margin-top: -30px;
+    }
+  }
+  .PostImage {
+    height: 300px;
+    width: 100%;
+  }
+}
+@include breakpoint-only("md") {
+}
+@include breakpoint-only("lg") {
+}
+@include breakpoint-only("xl") {
+}
+@include breakpoint-only("xxl") {
+}

@@ -1,0 +1,19 @@
+.MainWrapper {
+  justify-self: end;
+  align-self: end;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.Wraper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+.Input {
+  width: 20vw;
+}

@@ -1,0 +1,17 @@
+$devices_sizes: (
+  ("xs", 0px, 600px),
+  ("sm", 600px, 960px),
+  ("md", 960px, 1280px),
+  ("lg", 1280px, 1920px),
+  ("xl", 1920px, 3840px)
+);
+
+@mixin breakpoint-only($size-name) {
+  @each $size, $lower-breakpoint, $greater-breakpoint in $devices_sizes {
+    @if ($size == $size-name) {
+      @media screen and (min-width: $lower-breakpoint) and (max-width: $greater-breakpoint) {
+        @content;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+$devices_sizes: (
+  ("xs", 0px, 600px),
+  ("sm", 600px, 960px),
+  ("md", 960px, 1280px),
+  ("lg", 1280px, 1920px),
+  ("xl", 1920px, 3840px)
+);
+
+@mixin breakpoint-only($size-name) {
+  @each $size, $lower-breakpoint, $greater-breakpoint in $devices_sizes {
+    @if ($size == $size-name) {
+      @media screen and (min-width: $lower-breakpoint) and (max-width: $greater-breakpoint) {
+        @content;
+      }
+    }
+  }
+}
+.FormEdit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.FormEditHeader {
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "RichardMurray";
+  font-weight: 300;
+  margin: 15px auto;
+}
+.ButtonsAvatarContainer {
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+@include breakpoint-only("xs") {
+  .FormEditHeader {
+    font-size: 2rem;
+  }
+  .ButtonsAvatarContainer {
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-around;
+  }
+}
