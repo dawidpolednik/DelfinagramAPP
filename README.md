@@ -1,6 +1,11 @@
 
 You can test this APP under this link: https://youthful-heisenberg-417db8.netlify.com/
 
+or clone this repo, set the project root path in a command line and then write this commands:
+
+- npm install = install all dependencies and libraries
+- npm start  =  launch a Delfinagram APP
+
 
 Summary of Project Delifnagram APP
 This is a full list of functionalities that was made by Me in the Delfinagram APP :
